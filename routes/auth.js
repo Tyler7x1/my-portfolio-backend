@@ -17,7 +17,7 @@ router.get('/github/callback', passport.authenticate('github', { session: false 
     process.env.JWT_SECRET,
     { expiresIn: '7d' }
   );
-  res.redirect(`http://jayprakash-malik.vercel.app/guestbook?token=${encodeURIComponent(token)}`);
+  res.redirect(`https://jayprakash-malik.vercel.app/guestbook?token=${encodeURIComponent(token)}`);
 });
 
 export default router;

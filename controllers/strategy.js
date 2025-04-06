@@ -9,7 +9,7 @@ dotenv.config();
 const strategy = passport.use(new GitHubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
-    callbackURL: "http://tylers-backend.onrender.com/auth/github/callback"
+    callbackURL: "https://tylers-backend.onrender.com/auth/github/callback"
   }, async (accessToken, refreshToken, profile, done) => {
     try {
       let user = await GitHubUser.findOne({ githubId: profile.id });

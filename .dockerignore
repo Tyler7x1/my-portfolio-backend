@@ -1,0 +1,19 @@
+# Ignore environment files
+.env
+
+# Node modules
+node_modules
+
+# Logs
+*.log
+
+# OS metadata
+.DS_Store
+
+# Git files
+.git
+.gitignore
+
+# Optional: if you use build tools
+dist/
+build/
